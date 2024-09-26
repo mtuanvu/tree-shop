@@ -1,0 +1,116 @@
+$primary-color: #9fb191;
+$secondary-color: #f9f4e9;
+$button-add: #c2d1b0;
+$button-reset: #b4706f;
+$border-color: #c2c2c2;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $secondary-color;
+}
+
+.tree-app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .tree-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    input[type='text'],
+    textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      outline: none;
+      width: 100%;
+    }
+
+    input[type='file'] {
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-color: $button-add;
+        color: white;
+      }
+
+      &:nth-child(2) {
+        background-color: $button-reset;
+        color: white;
+        margin-left: 10px;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .tree-list {
+    border-top: 2px solid $border-color;
+    padding-top: 10px;
+  }
+
+  .tree-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid $border-color;
+
+    img {
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    div {
+      h3 {
+        font-size: 1.2rem;
+        color: $primary-color;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #444;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px;
+  background-color: $primary-color;
+  color: white;
+  font-size: 0.9rem;
+}
